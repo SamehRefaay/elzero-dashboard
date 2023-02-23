@@ -1,0 +1,103 @@
+/* Start Margin and Padding */
+.m-auto {
+  margin: auto;
+}
+.m-20 {
+  margin: 20px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.p-10 {
+  padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.p-20-10 {
+  padding: 20px 10px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pr-20 {
+  padding-right: 20px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.ph-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.pv-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.pv-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* End Margin and Padding */
+/* Start Text Fonts And Alignment */
+.fs-1 {
+  font-size: 1em;
+}
+.fs-1p3 {
+  font-size: 1.3em;
+}
+.fs-2em {
+  font-size: 2em;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.txt-c {
+  text-align: center;
+}
+/* End Text Fonts And Alignment */
+/* Start Color */
+.c-black {
+  color: black;
+}
+/* End Color */
+/* Start Position */
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+/* End Position */
+/* Start Border */
+.bb-1 {
+  border-bottom: 1px solid black;
+}
+.bb-2 {
+  border-bottom: 2px solid black;
+}
+.rad-6 {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+/* End Border */
+/* Start Display */
+.d-flex {
+  display: flex;
+}
+.flex-c {
+  flex-direction: column;
+}
+.gap-5 {
+  gap: 5px;
+}
+/* End Display */
