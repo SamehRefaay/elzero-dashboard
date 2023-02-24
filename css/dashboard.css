@@ -2,6 +2,7 @@
 :root {
   --main-transition: 0.3s;
   --gray-color: #888;
+  --red-color: #f44336;
   --section-background: #f1f5f9;
 }
 /*End Global Variables*/
@@ -19,6 +20,9 @@ a {
 }
 :focus {
   outline: none;
+}
+::placeholder {
+  font-size: 14px;
 }
 /* start componants */
 .active {
@@ -133,7 +137,6 @@ body {
 /* End Content */
 .content {
   flex: 1;
-  margin-left: 2px;
 }
 .content .fixed-header {
   justify-content: space-between;
@@ -150,8 +153,40 @@ body {
   -o-transform: translate(-50%, -50%);
 }
 .content .fixed-header .search-box input {
+  width: 150px;
   border: 1px solid #ccc;
   color: var(--gray-color);
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.content .fixed-header .search-box input:focus {
+  width: 180px;
+}
+.content .fixed-header .search-box input::placeholder {
+  font-size: 14px;
+}
+.content .fixed-header .search-box input:focus::placeholder {
+  opacity: 0;
+}
+.content .fixed-header .user .fa-bell {
+  position: relative;
+}
+.content .fixed-header .user .fa-bell::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .content .fixed-header .user .user-avatar {
   width: 32px;

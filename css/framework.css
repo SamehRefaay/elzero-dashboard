@@ -1,3 +1,11 @@
+/*Start Gloabals*/
+:root {
+  --main-transition: 0.3s;
+  --gray-color: #888;
+  --red-color: #f44336;
+  --section-background: #f1f5f9;
+}
+/* End global */
 /* Start Margin and Padding */
 .m-auto {
   margin: auto;
@@ -107,6 +115,9 @@ mb-0 {
 .fw-700 {
   font-weight: 700;
 }
+.fw-900 {
+  font-weight: 900;
+}
 .txt-c {
   text-align: center;
 }
@@ -171,9 +182,14 @@ mb-0 {
 .d-flex {
   display: flex;
 }
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
 .flex-c {
   flex-direction: column;
 }
+
 .gap-5 {
   gap: 5px;
 }
