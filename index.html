@@ -22,11 +22,9 @@
     />
   </head>
   <body>
-    <div class="dashboard">
-      <div class="sidebar ph-20">
-        <h2 class="title fs-1p3 fw-bold p-relative m-auto p-20-10 bb-2">
-          Elzero
-        </h2>
+    <div class="dashboard d-flex">
+      <div class="sidebar ph-20 bg-white">
+        <h2 class="title fs-1p3 fw-bold p-relative m-auto p-20 bb-2">Elzero</h2>
         <ul class="main-menu d-flex flex-c gap-5 mt-30">
           <li class="active p-10 rad-6">
             <a href="#dashboard" class="c-black">
@@ -78,7 +76,73 @@
           </li>
         </ul>
       </div>
-      <div class="content"></div>
+      <div class="content">
+        <div class="fixed-header d-flex p-20 bg-white">
+          <div class="search-box p-relative">
+            <i class="p-absolute fs-14 fa-solid fa-magnifying-glass"></i>
+            <input
+              class="pl-30 pv-10 rad-10 fs-14"
+              type="text"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="user d-flex">
+            <i class="fa-regular fa-bell"></i>
+            <div class="user-avatar">
+              <img src="images/avatar.png" alt="user-avatar" />
+            </div>
+          </div>
+        </div>
+        <div id="dashboard" class="dashboard">
+          <h2 class="main-heading fs-32 m-20">Dashboard</h2>
+          <div class="container">
+            <div class="welcome box bg-white rad-10">
+              <div class="header bg-eee p-20 d-flex">
+                <div class="info">
+                  <h3 class="sub-heading fs-24 fw-700">Welcome</h3>
+                  <span class="d-block fw-400">Elzero</span>
+                </div>
+                <div class="img-holder">
+                  <img src="images/welcome.png" alt="welcome" />
+                </div>
+              </div>
+              <div class="data mt-50 pv-20 d-flex txt-c">
+                <div class="holder">
+                  <img src="images/avatar.png" alt="avatar" />
+                </div>
+                <div class="data-box">
+                  <h4 class="fs-16 fw-400 c-black">Osama Elzero</h4>
+                  <span class="d-block mt-10 fs-14 c-888">Developer</span>
+                </div>
+                <div class="data-box">
+                  <h4 class="fs-16 fw-400 c-black">80</h4>
+                  <span class="d-block mt-10 fs-14 c-888">Projects</span>
+                </div>
+                <div class="data-box">
+                  <h4 class="fs-16 fw-400 c-black">$8500</h4>
+                  <span class="d-block mt-10 fs-14 c-888">Earned</span>
+                </div>
+              </div>
+              <input
+                class="pv-10 ph-15 bg-blue c-white rad-6 mt-20"
+                type="submit"
+                value="profile"
+              />
+            </div>
+            <div class="box 2">box 2</div>
+            <div class="box 3">box 3</div>
+            <div class="box 4">box 4</div>
+            <div class="box 5">box 5</div>
+            <div class="box 6">box 6</div>
+            <div class="box 7">box 7</div>
+            <div class="box 8">box 8</div>
+            <div class="box 9">box 9</div>
+            <div class="box 10">box 10</div>
+            <div class="box 11">box 11</div>
+            <div class="box 12">box 12</div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
