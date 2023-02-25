@@ -277,4 +277,20 @@ body {
   width: fit-content;
   margin: 0 0 0 auto;
 }
+/* Start Yearly Targets */
+.dashboard .yearly-targets .box-content .card {
+}
+.dashboard .yearly-targets .box-content .card .card-front {
+  width: 80px;
+  height: 80px;
+}
+.dashboard .yearly-targets .box-content .card .card-body {
+  flex: 1;
+  justify-content: space-evenly;
+}
+.dashboard .yearly-targets .box-content .card .progress {
+  height: 3px;
+}
+
+/* End Yearly Targets */
 /* End Dashboard Content */

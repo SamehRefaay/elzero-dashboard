@@ -1,17 +1,28 @@
 /*Start Gloabals*/
 :root {
   --main-transition: 0.3s;
-  --gray-color: #888;
+  --gray-colo: #888;
   --red-color: #f44336;
+  --light-pink-color: #fdecce;
+  --light-blue-color: #cce3ff;
+  --light-green-color: #d3f3df;
   --section-background: #f1f5f9;
 }
 /* End global */
+/* Start width and height */
+w-full {
+  width: 100%;
+}
+/* End width and height */
 /* Start Margin and Padding */
 .m-auto {
   margin: auto;
 }
 .m-20 {
   margin: 20px;
+}
+.mt-5 {
+  margin-top: 5px;
 }
 .mt-10 {
   margin-top: 10px;
@@ -31,6 +42,9 @@
 mb-0 {
   margin-bottom: 0;
 }
+.p-5 {
+  padding: 5px;
+}
 .p-10 {
   padding: 10px;
 }
@@ -39,6 +53,9 @@ mb-0 {
 }
 .p-20 {
   padding: 20px;
+}
+.p-30 {
+  padding: 30px;
 }
 .p-20-10 {
   padding: 20px 10px;
@@ -138,6 +155,9 @@ mb-0 {
 .c-888 {
   color: #888;
 }
+.c-gray {
+  color: #888;
+}
 .bg-white {
   background-color: white;
 }
@@ -146,6 +166,15 @@ mb-0 {
 }
 .bg-blue {
   background-color: #0075ff;
+}
+.bg-light-blue {
+  background-color: var(--light-blue-color);
+}
+.bg-light-green {
+  background-color: var(--light-green-color);
+}
+.bg-light-pink {
+  background-color: var(--light-pink-color);
 }
 /* End Color */
 /* Start Position */
@@ -186,12 +215,18 @@ mb-0 {
   justify-content: space-between;
   align-items: center;
 }
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
 .flex-c {
   flex-direction: column;
 }
-
 .gap-5 {
   gap: 5px;
+}
+.gap-10 {
+  gap: 10px;
 }
 .gap-20 {
   gap: 20px;
