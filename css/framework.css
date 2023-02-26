@@ -3,7 +3,10 @@
   --main-transition: 0.3s;
   --gray-colo: #888;
   --red-color: #f44336;
-  --light-pink-color: #fdecce;
+  --green-color: #22c55e;
+  --orange-color: #f59e0b;
+  --blue-color: #0075ff;
+  --light-orange-color: #fdecce;
   --light-blue-color: #cce3ff;
   --light-green-color: #d3f3df;
   --section-background: #f1f5f9;
@@ -105,6 +108,9 @@ mb-0 {
 .fs-2em {
   font-size: 2em;
 }
+.fs-12 {
+  font-size: 12px;
+}
 .fs-14 {
   font-size: 14px;
 }
@@ -113,6 +119,9 @@ mb-0 {
 }
 .fs-16 {
   font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
 }
 .fs-20 {
   font-size: 20px;
@@ -152,6 +161,18 @@ mb-0 {
 .c-black {
   color: black;
 }
+.c-red {
+  color: var(--red-color);
+}
+.c-blue {
+  color: var(--blue-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-green {
+  color: var(--green-color);
+}
 .c-888 {
   color: #888;
 }
@@ -164,8 +185,14 @@ mb-0 {
 .bg-eee {
   background-color: #eee;
 }
+.bg-orange {
+  background-color: var(--orange-color);
+}
 .bg-blue {
   background-color: #0075ff;
+}
+.bg-green {
+  background-color: var(--green-color);
 }
 .bg-light-blue {
   background-color: var(--light-blue-color);
@@ -173,8 +200,8 @@ mb-0 {
 .bg-light-green {
   background-color: var(--light-green-color);
 }
-.bg-light-pink {
-  background-color: var(--light-pink-color);
+.bg-light-orange {
+  background-color: var(--light-orange-color);
 }
 /* End Color */
 /* Start Position */
@@ -188,6 +215,9 @@ mb-0 {
 /* Start Border */
 .bb-1 {
   border-bottom: 1px solid black;
+}
+.b-1ccc {
+  border: 1px solid #ccc;
 }
 .bb-2 {
   border-bottom: 2px solid black;
@@ -208,20 +238,32 @@ mb-0 {
 }
 /* End Border */
 /* Start Display */
+.d-none {
+  display: none;
+}
 .d-flex {
   display: flex;
-}
-.flex-between {
-  justify-content: space-between;
-  align-items: center;
-}
-.flex-center {
-  justify-content: center;
-  align-items: center;
 }
 .flex-c {
   flex-direction: column;
 }
+/* start componets */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-grid {
+  display: grid;
+}
+/* end componets */
+
 .gap-5 {
   gap: 5px;
 }

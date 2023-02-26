@@ -94,8 +94,9 @@
           </div>
         </div>
         <div id="dashboard" class="dashboard">
-          <h2 class="main-heading fs-32 m-20">Dashboard</h2>
+          <h2 class="main-heading fs-32 pt-20 pl-20">Dashboard</h2>
           <div class="container">
+            <!-- Start Welcome Board -->
             <div class="welcome box bg-white rad-10">
               <div class="header bg-eee p-20 d-flex">
                 <div class="info">
@@ -129,6 +130,8 @@
                 value="profile"
               />
             </div>
+            <!-- End Welcome Board -->
+            <!-- Start Quick Draft Board -->
             <div class="quick-draft box p-20">
               <div class="box-header">
                 <h3 class="sub-heading fs-24 fw-700">Quick Draft</h3>
@@ -153,8 +156,9 @@
                 />
               </form>
             </div>
-            <!-- Start Yearly Targets -->
-            <div class="yearly-targets bg-white p-20">
+            <!-- Start Quick Draft Board -->
+            <!-- Start Yearly Targets Board -->
+            <div class="yearly-targets bg-white p-20 rad-10">
               <div class="box-header">
                 <h3 class="sub-heading fs-24 fw-700">Yearly Targets</h3>
                 <h4 class="c-888 mt-20 fs-15 fw-400">Targets Of The Year</h4>
@@ -163,42 +167,100 @@
                 <!-- card 1 -->
                 <div class="card d-flex w-full gap-10">
                   <div class="card-front d-flex flex-center bg-light-blue">
-                    <i class="fa-solid fa-dollar-sign fa-lg"></i>
+                    <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
                   </div>
                   <div class="card-body d-flex flex-c">
                     <span class="title d-block c-gray fs-14">Money</span>
-                    <span class="value d-block c-black fs-20 fw-bold"
+                    <span class="value d-block c-black fs-18 fw-bold"
                       >$20,000</span
                     >
-                    <span class="progress d-block w-full bg-light-blue"></span>
+                    <div class="progress p-relative w-full bg-light-blue">
+                      <span style="width: 80%" class="p-absolute bg-blue blue"
+                        ><span class="p-absolute fs-12 bg-blue rad-6 c-white"
+                          >88%</span
+                        ></span
+                      >
+                    </div>
                   </div>
                 </div>
                 <!-- card 2 -->
                 <div class="card d-flex gap-10">
-                  <div class="card-front d-flex flex-center bg-light-pink">
-                    <i class="fa-solid fa-code fa-lg"></i>
+                  <div class="card-front d-flex flex-center bg-light-orange">
+                    <i class="fa-solid fa-code fa-lg c-orange"></i>
                   </div>
                   <div class="card-body d-flex flex-c">
                     <span class="title d-block c-gray fs-14">Project</span>
-                    <span class="value d-block c-black fs-20 fw-bold">24</span>
-                    <span class="progress d-block w-full bg-light-pink"></span>
+                    <span class="value d-block c-black fs-18 fw-bold">24</span>
+                    <div class="progress p-relative w-full bg-light-orange">
+                      <span
+                        style="width: 55%"
+                        class="p-absolute bg-orange orange"
+                        ><span class="p-absolute fs-12 bg-orange rad-6 c-white"
+                          >55%</span
+                        ></span
+                      >
+                    </div>
                   </div>
                 </div>
                 <!-- card 3 -->
                 <div class="card d-flex gap-10">
                   <div class="card-front d-flex flex-center bg-light-green">
-                    <i class="fa-solid fa-user fa-lg"></i>
+                    <i class="fa-solid fa-user fa-lg c-green"></i>
                   </div>
                   <div class="card-body d-flex flex-c">
                     <span class="title d-block c-gray fs-14">Team</span>
-                    <span class="value d-block c-black fs-20 fw-bold">12</span>
-                    <span class="progress d-block w-full bg-light-green"></span>
+                    <span class="value d-block c-black fs-18 fw-bold">12</span>
+                    <div class="progress p-relative w-full bg-light-green">
+                      <span style="width: 75%" class="p-absolute bg-green green"
+                        ><span class="p-absolute fs-12 bg-green rad-6 c-white"
+                          >75%</span
+                        ></span
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- End Yearly Targets -->
-            <div class="box 4">box 4</div>
+            <!-- End Yearly Targets Board -->
+            <!-- Start Tickets Statistics Board-->
+            <div class="tickets bg-white rad-10 p-20">
+              <h3 class="sub-heading fs-24 fw-700">Tickets Statistics</h3>
+              <h4 class="c-888 mt-20 fs-15 fw-400">
+                Everything About Support Tickets
+              </h4>
+              <div class="holder mt-20 d-grid gap-20">
+                <div
+                  class="flex-between flex-c b-1ccc pt-20 pb-20 gap-10 rad-6"
+                >
+                  <i class="fa-regular fa-rectangle-list c-orange fs-24"></i>
+                  <span class="fs-24 fw-bold">2500</span>
+                  <span class="fs-14 c-gray">Total</span>
+                </div>
+                <div
+                  class="flex-between flex-c b-1ccc pt-20 pb-20 gap-10 rad-6"
+                >
+                  <i class="fa-solid fa-spinner c-blue fs-24"></i>
+                  <span class="fs-24 fw-bold">500</span>
+                  <span class="fs-14 c-gray">Pending</span>
+                </div>
+                <div
+                  class="flex-between flex-c b-1ccc pt-20 pb-20 gap-10 rad-6"
+                >
+                  <i class="fa-regular fa-circle-check c-green fs-24"></i>
+                  <span class="fs-24 fw-bold">1900</span>
+                  <span class="fs-14 c-gray">Closed</span>
+                </div>
+                <div
+                  class="flex-between flex-c b-1ccc pt-20 pb-20 gap-10 rad-6"
+                >
+                  <i class="fa-regular fa-trash-can c-red fs-24"></i>
+                  <span class="fs-24 fw-bold">100</span>
+                  <span class="fs-14 c-gray">Deleted</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- End Tickets Statistics Board-->
             <div class="box 5">box 5</div>
             <div class="box 6">box 6</div>
             <div class="box 7">box 7</div>

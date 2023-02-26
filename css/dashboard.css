@@ -1,8 +1,14 @@
 /*Start Global Variables*/
 :root {
   --main-transition: 0.3s;
-  --gray-color: #888;
+  --gray-colo: #888;
   --red-color: #f44336;
+  --green-color: #22c55e;
+  --orange-color: #f59e0b;
+  --blue-color: #0075ff;
+  --light-pink-color: #fdecce;
+  --light-blue-color: #cce3ff;
+  --light-green-color: #d3f3df;
   --section-background: #f1f5f9;
 }
 /*End Global Variables*/
@@ -39,12 +45,12 @@ a {
   height: 3px;
 }
 .main-heading::before {
-  left: 0;
+  left: 20px;
   width: 40px;
   background-color: black;
 }
 .main-heading::after {
-  left: 40px;
+  left: 60px;
   width: 80px;
   background-color: white;
 }
@@ -201,10 +207,18 @@ body {
   flex: 1;
 }
 .dashboard .container {
+  margin-top: 20px;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 20px;
+}
+@media (max-width: 767px) {
+  .dashboard .container {
+    padding: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
 }
 .dashboard .container .box {
   position: relative;
@@ -288,9 +302,56 @@ body {
   flex: 1;
   justify-content: space-evenly;
 }
-.dashboard .yearly-targets .box-content .card .progress {
-  height: 3px;
+.dashboard .yearly-targets .progress {
+  height: 5px;
+  position: relative;
 }
-
+.dashboard .yearly-targets .progress > span {
+  left: 0;
+  top: 1px;
+  height: 3px;
+  z-index: 5;
+}
+.yearly-targets .progress > span::before {
+  content: "";
+  position: absolute;
+  border-color: transparent;
+  border-width: 5px;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  right: -4px;
+  top: -5px;
+}
+.yearly-targets .progress .green::before {
+  border-top-color: var(--green-color);
+}
+.yearly-targets .progress .orange::before {
+  border-top-color: var(--orange-color);
+}
+.yearly-targets .progress .blue::before {
+  border-top-color: var(--blue-color);
+}
+.yearly-targets .progress > span span {
+  top: -22px;
+  right: -15px;
+  padding: 2px 4px;
+}
 /* End Yearly Targets */
+/* Start Tickets */
+.tickets .holder {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+@media (max-width: 767px) {
+  .tickets .holder {
+    gap: 10px;
+  }
+  .tickets .holder > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 5px;
+  }
+}
+/* End Tickets */
+
 /* End Dashboard Content */
