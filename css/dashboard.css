@@ -216,7 +216,7 @@ body {
 @media (max-width: 767px) {
   .dashboard .container {
     padding: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 10px;
   }
 }
@@ -383,4 +383,16 @@ body {
   font-size: 14px;
 }
 /* End News */
+/* Start Tasks */
+.tasks .done h3,
+.tasks .done p {
+  text-decoration: line-through;
+}
+.tasks .done i,
+.tasks .done h3,
+.tasks .done p {
+  opacity: 0.3;
+}
+/* End Tasks */
+
 /* End Dashboard Content */

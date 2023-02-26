@@ -225,6 +225,12 @@ mb-0 {
 .b-1ccc {
   border: 1px solid #ccc;
 }
+.bt-1eee {
+  border-top: 1px solid #eee;
+}
+.bb-1eee {
+  border-bottom: 1px solid #eee;
+}
 .bb-2 {
   border-bottom: 2px solid black;
 }
