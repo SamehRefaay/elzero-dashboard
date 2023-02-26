@@ -353,5 +353,34 @@ body {
   }
 }
 /* End Tickets */
-
+/* Start News */
+.news .card:not(:first-child) {
+  padding-top: 20px;
+}
+.news .card:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.news .card .head {
+  width: 100px;
+}
+@media (max-width: 767px) {
+  .news .card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.news .card .head img {
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .news .card .body h3 {
+    font-size: 16px;
+  }
+}
+.news .card .tail {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+/* End News */
 /* End Dashboard Content */

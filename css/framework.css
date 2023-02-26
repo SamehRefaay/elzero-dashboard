@@ -16,6 +16,9 @@
 w-full {
   width: 100%;
 }
+wrap-content {
+  width: fit-content;
+}
 /* End width and height */
 /* Start Margin and Padding */
 .m-auto {
@@ -44,6 +47,9 @@ w-full {
 }
 mb-0 {
   margin-bottom: 0;
+}
+.ml-15 {
+  margin-left: 15px;
 }
 .p-5 {
   padding: 5px;
@@ -246,6 +252,12 @@ mb-0 {
 }
 .flex-c {
   flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
+}
+align-items-center {
+  align-items: center;
 }
 /* start componets */
 .flex-between {
