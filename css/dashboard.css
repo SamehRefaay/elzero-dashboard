@@ -103,8 +103,6 @@ body {
     display: none;
   }
 }
-.sidebar ul {
-}
 @media (max-width: 767px) {
   .sidebar ul {
     align-items: center;
@@ -235,8 +233,7 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.dashboard .box .info {
-}
+
 .dashboard .box .info span {
   margin-top: 20px;
   color: var(--gray-color);
@@ -292,8 +289,6 @@ body {
   margin: 0 0 0 auto;
 }
 /* Start Yearly Targets */
-.dashboard .yearly-targets .box-content .card {
-}
 .dashboard .yearly-targets .box-content .card .card-front {
   width: 80px;
   height: 80px;
@@ -394,5 +389,19 @@ body {
   opacity: 0.3;
 }
 /* End Tasks */
-
+/* Start Search */
+.search-items {
+  display: flex;
+  flex-direction: column;
+}
+.search-items > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.search-items .card span:last-of-type {
+  padding: 5px 10px;
+}
+/* End Search */
 /* End Dashboard Content */
