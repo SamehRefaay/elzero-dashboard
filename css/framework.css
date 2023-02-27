@@ -13,10 +13,16 @@
 }
 /* End global */
 /* Start width and height */
-w-full {
+.w-40 {
+  width: 40px;
+}
+.w-100 {
+  width: 100px;
+}
+.w-full {
   width: 100%;
 }
-wrap-content {
+.wrap-content {
   width: fit-content;
 }
 /* End width and height */
@@ -271,11 +277,19 @@ align-items-center {
   justify-content: space-between;
   align-items: center;
 }
-
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btn-shap {
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 .d-grid {
   display: grid;
