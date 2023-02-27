@@ -438,6 +438,27 @@ body {
 .uploads .card:not(:first-child) {
   padding-top: 10px;
 }
+@media (max-width: 767px) {
+  .uploads i{
+    width: 30px;
+  }
+  .uploads .card > div span:first-of-type {
+    font-size: 15px;
+  }
+  .uploads .card > div span:last-of-type {
+    font-size: 13px;
+  }
+  .uploads .card > span {
+    font-size: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .uploads .card {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
 /* End Uploads */
 /* End Dashboard Content */
 
