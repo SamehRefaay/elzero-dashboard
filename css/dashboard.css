@@ -460,7 +460,6 @@ body {
   }
 }
 /* End Uploads */
-/* End Dashboard Content */
 /* Start Last Project Progress */
 .project .project-progress::before {
   content: "";
@@ -502,6 +501,41 @@ body {
   opacity: 0.2;
 }
 /* End Last Project Progress */
+/* Start Reminders */
+.reminders {
+  position: relative;
+}
+.reminders ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.reminders ul .blue::before {
+  background-color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+.reminders ul .green::before {
+  background-color: var(--green-color);
+}
+.reminders ul .orange::before {
+  background-color: var(--orange-color);
+}
+.reminders ul .red::before {
+  background-color: var(--red-color);
+}
+.reminders ul li > div {
+  border-left: 3px solid inherit;
+}
+
+/* End Reminders */
+/* End Dashboard Content */
 /* Start Animation */
 @keyframes shake {
   0% {
