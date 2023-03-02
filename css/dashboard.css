@@ -581,9 +581,53 @@ body {
 .social-media .card a {
   font-size: 13px;
 }
-
 /* End Social Media */
-
+/* Start Project Table */
+.projects {
+  margin: 0 20px;
+}
+.projects .responsive-table {
+  overflow-x: auto;
+}
+.projects table {
+  min-width: 1000px;
+  width: 100%;
+  border-spacing: 0;
+}
+.projects table thead {
+  background-color: #eee;
+  font-weight: bold;
+}
+.projects table td {
+  font-size: 15px;
+  padding: 20px 15px;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.projects tbody td img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.projects tbody td img:not(:first-child) {
+  margin-left: -20px;
+}
+.projects tbody td:last-child {
+  border-right: 1px solid #eee;
+}
+.projects tbody td:last-child span {
+  font-size: 13px;
+}
+.projects tbody tr:hover {
+  background-color: #faf7f7;
+}
+/* Start Project Table */
 /* End Dashboard Content */
 /* Start Animation */
 @keyframes shake {
