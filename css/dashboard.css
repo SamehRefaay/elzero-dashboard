@@ -10,6 +10,14 @@
   --light-blue-color: #cce3ff;
   --light-green-color: #d3f3df;
   --section-background: #f1f5f9;
+  --twitter-color: rgb(29, 161, 242);
+  --twitter-light-color: rgba(29, 161, 242, 0.3);
+  --facebook-color: rgb(24, 119, 242);
+  --facebook-light-color: rgb(24, 119, 242, 0.3);
+  --youtube-color: rgb(255, 0, 0);
+  --youtube-light-color: rgb(255, 0, 0, 0.3);
+  --linkedin-color: rgb(0, 119, 181);
+  --linkedin-light-color: rgb(0, 119, 181, 0.3);
 }
 /*End Global Variables*/
 /* Start Global Rule*/
@@ -558,6 +566,23 @@ body {
   line-height: 1.8;
 }
 /* End Latest Post */
+/* Start Social Media */
+.social-media .card div {
+  padding-left: 70px;
+  font-size: 15px;
+}
+.social-media .card i:hover {
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+}
+.social-media .card a {
+  font-size: 13px;
+}
+
+/* End Social Media */
 
 /* End Dashboard Content */
 /* Start Animation */
