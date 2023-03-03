@@ -629,6 +629,95 @@ body {
 }
 /* Start Project Table */
 /* End Dashboard Content */
+/*********************************** Start Settings Page */
+/* Componants */
+/* Start Toggle Checkbox */
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.toggle-checkbox {
+  position: relative;
+  width: 75px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.toggle-checkbox::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00d";
+  font-weight: 900;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  transition: var(--main-transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.checkbox:checked + .toggle-checkbox {
+  background-color: var(--blue-color);
+}
+.checkbox:checked + .toggle-checkbox::before {
+  left: 48px;
+  content: "\f00c";
+  color: var(--blue-color);
+}
+/* End Toggle Checkbox */
+/* End Componants */
+/* Start Site Control Board */
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+}
+@media (max-width: 767px) {
+  .settings {
+    padding-left: 0px;
+    /* background:blue; */
+  }
+  .settings .main-heading {
+    padding-left: 10px;
+  }
+  .settings-page {
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px;
+    gap: 10px;
+  }
+  .settings-page > div {
+    padding: 10px;
+  }
+}
+.settings-page .close-message {
+  resize: none;
+  padding: 10px;
+  min-height: 140px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+}
+.settings-page .close-message::placeholder {
+  font-size: 13px;
+}
+/* End Site Control Board */
+
+/************************************ End Settings Page */
 /* Start Animation */
 @keyframes shake {
   0% {

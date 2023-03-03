@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elzero Dashboard</title>
+    <!-- add font-aswesome liberary -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- add normalize file -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- add framework stylesheet -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- add main file stylesheet -->
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <!-- add opensans google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dashboard d-flex">
+      <div class="sidebar ph-20 bg-white p-relative">
+        <h2 class="title fs-1p3 fw-bold p-relative m-auto p-20 bb-2">Elzero</h2>
+        <ul class="main-menu d-flex flex-c gap-5 mt-30">
+          <li class="p-10 rad-6">
+            <a href="index.html" class="c-black">
+              <i class="fa-solid fa-table-columns mr-10"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6 active">
+            <a href="settings.html" class="c-black">
+              <i class="mr-10 fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="#profile" class="c-black">
+              <i class="mr-10 fa-solid fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="#projects" class="c-black">
+              <i class="mr-10 fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="#courses" class="c-black">
+              <i class="mr-10 fa-solid fa-graduation-cap"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="#friends" class="c-black">
+              <i class="mr-10 fa-solid fa-user-group"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="#files" class="c-black">
+              <i class="mr-10 fa-solid fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="#files" class="c-black">
+              <i class="mr-10 fa-solid fa-credit-card"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="fixed-header d-flex p-15 bg-white">
+          <div class="search-box p-relative">
+            <i class="p-absolute fs-14 fa-solid fa-magnifying-glass"></i>
+            <input
+              class="pl-30 pv-10 rad-10 fs-14"
+              type="text"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="user d-flex flex-between gap-20">
+            <i class="fa-regular fa-bell fa-lg fw-900"></i>
+            <div class="user-avatar">
+              <img src="images/avatar.png" alt="user-avatar" />
+            </div>
+          </div>
+        </div>
+        <div id="settings" class="settings">
+          <h2 class="main-heading fs-32 pt-20 pl-20">Settings</h2>
+          <!-- settings page container -->
+          <div class="settings-page mt-30 p-20 d-grid gap-20">
+            <div class="site-control p-20 bg-white rad-10">
+              <h2>Site Control</h2>
+              <p class="mt-10 c-gray">
+                Control The Website If There Is Maintenance.
+              </p>
+              <div class="flex-between align-items-center">
+                <div class="label mt-20">
+                  <span>Website Control</span>
+                  <p class="mt-5 c-gray fs-13">
+                    Open/Close Website And Type The Reason.
+                  </p>
+                </div>
+                <div class="control">
+                  <label>
+                    <input class="checkbox mt-30" type="checkbox" checked />
+                    <div class="toggle-checkbox"></div>
+                  </label>
+                </div>
+              </div>
+              <textarea
+                class="close-message mt-20 w-full"
+                placeholder="Close Message Content"
+              ></textarea>
+            </div>
+          </div>
+          <!--Start Toggle Check Box -->
+
+          <!--Start Toggle Check Box -->
+        </div>
+        <!-- End Settings Page -->
+      </div>
+    </div>
+  </body>
+</html>

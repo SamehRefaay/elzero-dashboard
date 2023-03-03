@@ -238,6 +238,9 @@ mb-0 {
 .bg-orange {
   background-color: var(--orange-color);
 }
+.bg-red {
+  background-color: var(--red-color);
+}
 .bg-blue {
   background-color: #0075ff;
 }
