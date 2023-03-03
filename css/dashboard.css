@@ -708,7 +708,7 @@ body {
 .settings-page .close-message {
   resize: none;
   padding: 10px;
-  min-height: 140px;
+  min-height: 175px;
   max-width: 100%;
   border: 1px solid #ccc;
 }
@@ -716,7 +716,15 @@ body {
   font-size: 13px;
 }
 /* End Site Control Board */
+/* Start General Info Board */
 
+.general-info .email {
+  display: inline-flex;
+  width: calc(100% - 90px);
+  margin-right: 5px;
+}
+
+/* End General Info Board */
 /************************************ End Settings Page */
 /* Start Animation */
 @keyframes shake {

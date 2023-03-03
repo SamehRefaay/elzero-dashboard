@@ -53,6 +53,9 @@
 .m-20 {
   margin: 20px;
 }
+.mt-0 {
+  margin-top: 0px;
+}
 .mt-5 {
   margin-top: 5px;
 }
@@ -71,8 +74,14 @@
 .mr-10 {
   margin-right: 10px;
 }
-mb-0 {
+.mb-0 {
   margin-bottom: 0;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
 }
 .ml-15 {
   margin-left: 15px;
@@ -290,16 +299,19 @@ mb-0 {
 }
 /* End Position */
 /* Start Border */
+.b-none {
+  border: none;
+}
 .bb-1 {
   border-bottom: 1px solid black;
 }
-.b-1ccc {
+.b-ccc {
   border: 1px solid #ccc;
 }
-.bt-1eee {
+.bt-eee {
   border-top: 1px solid #eee;
 }
-.bb-1eee {
+.bb-eee {
   border-bottom: 1px solid #eee;
 }
 .bb-2 {
