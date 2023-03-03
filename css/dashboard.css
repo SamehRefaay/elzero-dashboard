@@ -6,6 +6,7 @@
   --green-color: #22c55e;
   --orange-color: #f59e0b;
   --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
   --light-pink-color: #fdecce;
   --light-blue-color: #cce3ff;
   --light-green-color: #d3f3df;
@@ -681,6 +682,11 @@ body {
   color: var(--blue-color);
 }
 /* End Toggle Checkbox */
+.settings-page :disabled {
+  cursor: pointer;
+  background-color: #f0f4f8;
+  color: #bbb;
+}
 /* End Componants */
 /* Start Site Control Board */
 .settings-page {
@@ -717,14 +723,60 @@ body {
 }
 /* End Site Control Board */
 /* Start General Info Board */
-
 .general-info .email {
   display: inline-flex;
-  width: calc(100% - 90px);
+  width: calc(100% - 80px);
   margin-right: 5px;
 }
-
 /* End General Info Board */
+.security-info .password-btn {
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.security-info .password-btn:hover {
+  background-color: var(--blue-alt-color);
+}
+/* Start Social Info Board */
+.social-info .card i {
+  width: 40px;
+  height: 40px;
+  color: #888;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  transition: var(--main-transition);
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -ms-border-radius: 6px 0 0 6px;
+  -o-border-radius: 6px 0 0 6px;
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.social-info .card input {
+  height: 40px;
+  padding-left: 10px;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -ms-border-radius: 0 6px 6px 0;
+  -o-border-radius: 0 6px 6px 0;
+}
+.social-info input::placeholder {
+  font-size: 14px;
+}
+.social-info > div:focus-within i {
+  color: black;
+}
+/* End Social Info Board */
 /************************************ End Settings Page */
 /* Start Animation */
 @keyframes shake {

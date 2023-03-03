@@ -6,6 +6,7 @@
   --green-color: #22c55e;
   --orange-color: #f59e0b;
   --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
   --light-orange-color: #fdecce;
   --light-blue-color: #cce3ff;
   --light-green-color: #d3f3df;
@@ -301,6 +302,9 @@
 /* Start Border */
 .b-none {
   border: none;
+}
+.br-ccc {
+  border-right: 1px solid #ccc;
 }
 .bb-1 {
   border-bottom: 1px solid black;
