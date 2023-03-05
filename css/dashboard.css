@@ -1039,6 +1039,41 @@ body {
   color: gold;
 }
 /* End Overview Board */
+@media (max-width: 767px) {
+  .user-skills-activites {
+    flex-direction: column;
+  }
+}
+
+/* Start Skills */
+@media (min-width: 768px) {
+  .skills > div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+/* End Skills */
+/* Start Activities */
+@media (max-width: 767px) {
+  .activities .card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .activities .card span {
+    text-align: center;
+  }
+}
+
+.activities .card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* End Activities */
 
 /******************* End Profile Page */
 
