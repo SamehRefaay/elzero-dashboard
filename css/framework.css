@@ -111,6 +111,9 @@
 .p-20-10 {
   padding: 20px 10px;
 }
+.pt-10 {
+  padding-top: 10px;
+}
 .pt-20 {
   padding-top: 20px;
 }
@@ -140,6 +143,10 @@
 .pv-10 {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.pv-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .pv-20 {
   padding-top: 20px;
