@@ -1044,8 +1044,14 @@ body {
     flex-direction: column;
   }
 }
-
 /* Start Skills */
+@media (max-width: 767px) {
+  .skills > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media (min-width: 768px) {
   .skills > div {
     padding-top: 15px;
@@ -1063,7 +1069,6 @@ body {
     text-align: center;
   }
 }
-
 .activities .card img {
   width: 64px;
   height: 64px;
@@ -1076,7 +1081,6 @@ body {
 /* End Activities */
 
 /******************* End Profile Page */
-
 /* Start Animation */
 @keyframes shake {
   0% {
