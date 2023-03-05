@@ -939,12 +939,39 @@ body {
 /* End Backup Manger */
 /************* End Settings Page */
 /******************* Start Profile Page */
+.profile .main-heading::before {
+  left: 0;
+}
+.profile .main-heading::after {
+  left: 40px;
+}
+/* Start Overview Board */
 .profile .overview {
   width: 100%;
 }
+@media (max-width: 767px) {
+  .profile .overview {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
 .profile .overview .avatar-box {
-  width: 300px;
+  width: 280px;
   border-right: 1px solid #eee;
+  height: fit-content;
+  margin: auto;
+  padding: 30px 20px 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .profile .overview .avatar-box {
+    width: 100%;
+    padding: 10px;
+    border: none;
+  }
 }
 .profile .overview .avatar-box > img {
   width: 120px;
@@ -976,6 +1003,43 @@ body {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
+.profile .overview .info-box .control .toggle-checkbox {
+  width: 78px;
+  height: 20px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.profile .overview .info-box .control .toggle-checkbox::before {
+  width: 12px;
+  height: 12px;
+  font-size: 8px;
+  top: 4px;
+  left: 4px;
+}
+.profile .overview .info-box .checkbox:checked + .toggle-checkbox::before {
+  left: 62px;
+}
+.profile .info {
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+@media (max-width: 767px) {
+  .profile .info > div {
+    flex-direction: column;
+  }
+}
+.profile .info:hover {
+  background-color: #f9f9f9;
+  color: gold;
+}
+/* End Overview Board */
+
 /******************* End Profile Page */
 
 /* Start Animation */
