@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elzero Dashboard</title>
+    <!-- add font-aswesome liberary -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- add normalize file -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- add framework stylesheet -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- add main file stylesheet -->
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <!-- add opensans google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page d-flex bg-master">
+      <div class="sidebar p-20 bg-white p-relative">
+        <h2 class="title fs-1p3 fw-bold p-relative m-auto p-20 bb-2">Elzero</h2>
+        <!-- left Menu -->
+        <ul class="main-menu d-flex flex-c gap-5 mt-30">
+          <li class="p-10 rad-6">
+            <a href="index.html" class="c-black">
+              <i class="fa-solid fa-table-columns mr-10"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="settings.html" class="c-black">
+              <i class="mr-10 fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="profile.html" class="c-black">
+              <i class="mr-10 fa-solid fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li class="active mt-10 p-10 rad-6">
+            <a href="projects.html" class="c-black">
+              <i class="mr-10 fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="#courses" class="c-black">
+              <i class="mr-10 fa-solid fa-graduation-cap"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="#friends" class="c-black">
+              <i class="mr-10 fa-solid fa-user-group"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="#files" class="c-black">
+              <i class="mr-10 fa-solid fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="#files" class="c-black">
+              <i class="mr-10 fa-solid fa-credit-card"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="fixed-header d-flex p-15 bg-white">
+          <div class="search-box p-relative">
+            <i class="p-absolute fs-14 fa-solid fa-magnifying-glass"></i>
+            <input
+              class="pl-30 pv-10 rad-10 fs-14"
+              type="text"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="user d-flex flex-between gap-20">
+            <i class="fa-regular fa-bell fa-lg fw-900"></i>
+            <div class="user-avatar">
+              <img src="images/avatar.png" alt="user-avatar" />
+            </div>
+          </div>
+        </div>
+        <!-- End Head -->
+        <!-- Start Page Content -->
+        <h2 class="page-header fs-32 mt-20 ml-20">Projects</h2>
+        <div class="header-decoration">
+          <span style="width: 70%"></span>
+        </div>
+        <div class="container d-grid mt-20 p-15 gap-20">
+          <!-- start project-->
+          <div class="project p-relative rad-10 p-20 bg-white">
+            <h3 class="project-name fs-16">Elzero Dashboard</h3>
+            <p class="level c-gray mt-10 fs-14">
+              Elzero Dashboard Project Design And Programming And Hosting
+            </p>
+            <span class="time-stamp fs-13 c-gray">15/10/2021 </span>
+            <div class="project-team mt-50">
+              <img class="avatar" src="images/team-01.png" alt="team-01" />
+              <img class="avatar" src="images/avatar.png" alt="" />
+              <img class="avatar" src="images/team-02.png" alt="team-02" />
+              <img class="avatar" src="images/team-03.png" alt="team-03" />
+              <img class="avatar" src="images/team-04.png" alt="team-04" />
+              <img class="avatar" src="images/team-05.png" alt="team-05" />
+            </div>
+            <div class="tech-skills flex-end mt-20 pt-20 pb-20 bt-eee bb-eee">
+              <span class="btn-shap bg-eee fs-13 ml-10">Programming</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Design</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Hosting</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Marketing</span>
+            </div>
+            <div class="flex-between mt-20">
+              <div class="progress mt-10 bg-eee rad-6">
+                <span
+                  class="d-block h-full bg-red rad-6"
+                  style="width: 45%"
+                ></span>
+              </div>
+              <span class="price c-gray fs-14">$ 2500</span>
+            </div>
+          </div>
+          <!-- end project -->
+          <!-- start project-->
+          <div class="project p-relative rad-10 p-20 bg-white">
+            <h3 class="project-name fs-16">Academy Portal</h3>
+            <p class="level c-gray mt-10 fs-14">
+              Academy Portal Project Design And Programming
+            </p>
+            <span class="time-stamp fs-13 c-gray">15/6/2022 </span>
+            <div class="project-team mt-50">
+              <img class="avatar" src="images/team-01.png" alt="team-01" />
+              <img class="avatar" src="images/avatar.png" alt="" />
+              <img class="avatar" src="images/team-02.png" alt="team-02" />
+            </div>
+            <div class="tech-skills flex-end mt-20 pt-20 pb-20 bt-eee bb-eee">
+              <span class="btn-shap bg-eee fs-13 ml-10">Programming</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Design</span>
+            </div>
+            <div class="flex-between mt-20">
+              <div class="progress mt-10 bg-eee rad-6">
+                <span
+                  class="d-block h-full bg-green rad-6"
+                  style="width: 75%"
+                ></span>
+              </div>
+              <span class="price c-gray fs-14">$ 1800</span>
+            </div>
+          </div>
+          <!-- end project -->
+          <!-- start project-->
+          <div class="project p-relative rad-10 p-20 bg-white">
+            <h3 class="project-name fs-16">Chatting Application</h3>
+            <p class="level c-gray mt-10 fs-14">
+              Chatting Application Project Design
+            </p>
+            <span class="time-stamp fs-13 c-gray">15/6/2022 </span>
+            <div class="project-team mt-50">
+              <img class="avatar" src="images/team-01.png" alt="team-01" />
+              <img class="avatar" src="images/avatar.png" alt="" />
+              <img class="avatar" src="images/team-02.png" alt="team-02" />
+              <img class="avatar" src="images/team-03.png" alt="team-03" />
+            </div>
+            <div class="tech-skills flex-end mt-20 pt-20 pb-20 bt-eee bb-eee">
+              <span class="btn-shap bg-eee fs-13 ml-10">Design</span>
+            </div>
+            <div class="flex-between mt-20">
+              <div class="progress mt-10 bg-eee rad-6">
+                <span
+                  class="d-block h-full bg-blue rad-6"
+                  style="width: 100%"
+                ></span>
+              </div>
+              <span class="price c-gray fs-14">$ 950</span>
+            </div>
+          </div>
+          <!-- end project -->
+          <!-- start project-->
+          <div class="project p-relative rad-10 p-20 bg-white">
+            <h3 class="project-name fs-16">Ahmed Dashboard</h3>
+            <p class="level c-gray mt-10 fs-14">
+              Ahmed Dashboard Project Design And Programming And Hosting
+            </p>
+            <span class="time-stamp fs-13 c-gray">15/6/2022 </span>
+            <div class="project-team mt-50">
+              <img class="avatar" src="images/team-01.png" alt="team-01" />
+              <img class="avatar" src="images/avatar.png" alt="" />
+              <img class="avatar" src="images/team-02.png" alt="team-02" />
+              <img class="avatar" src="images/team-03.png" alt="team-03" />
+              <img class="avatar" src="images/team-04.png" alt="team-04" />
+              <img class="avatar" src="images/team-05.png" alt="team-05" />
+            </div>
+            <div class="tech-skills flex-end mt-20 pt-20 pb-20 bt-eee bb-eee">
+              <span class="btn-shap bg-eee fs-13 ml-10">Programming</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Design</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Hosting</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Marketing</span>
+            </div>
+            <div class="flex-between mt-20">
+              <div class="progress mt-10 bg-eee rad-6">
+                <span
+                  class="d-block h-full bg-green rad-6"
+                  style="width: 50%"
+                ></span>
+              </div>
+              <span class="price c-gray fs-14">$ 1700</span>
+            </div>
+          </div>
+          <!-- end project -->
+          <!-- start project-->
+          <div class="project p-relative rad-10 p-20 bg-white">
+            <h3 class="project-name fs-16">Ahmed Portal</h3>
+            <p class="level c-gray mt-10 fs-14">
+              Ahmed Portal Project Design And Programming
+            </p>
+            <span class="time-stamp fs-13 c-gray">15/6/2022 </span>
+            <div class="project-team mt-50">
+              <img class="avatar" src="images/team-01.png" alt="team-01" />
+              <img class="avatar" src="images/avatar.png" alt="" />
+              <img class="avatar" src="images/team-02.png" alt="team-02" />
+              <img class="avatar" src="images/team-05.png" alt="team-05" />
+            </div>
+            <div class="tech-skills flex-end mt-20 pt-20 pb-20 bt-eee bb-eee">
+              <span class="btn-shap bg-eee fs-13 ml-10">Programming</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Design</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Hosting</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Marketing</span>
+            </div>
+            <div class="flex-between mt-20">
+              <div class="progress mt-10 bg-eee rad-6">
+                <span
+                  class="d-block h-full bg-green rad-6"
+                  style="width: 43%"
+                ></span>
+              </div>
+              <span class="price c-gray fs-14">$ 850</span>
+            </div>
+          </div>
+          <!-- end project -->
+          <!-- start project-->
+          <div class="project p-relative rad-10 p-20 bg-white">
+            <h3 class="project-name fs-16">Mohamed Application</h3>
+            <p class="level c-gray mt-10 fs-14">
+              Mohamed Application Project Design
+            </p>
+            <span class="time-stamp fs-13 c-gray">15/6/2022 </span>
+            <div class="project-team mt-50">
+              <img class="avatar" src="images/team-01.png" alt="team-01" />
+              <img class="avatar" src="images/team-03.png" alt="team-03" />
+              <img class="avatar" src="images/team-04.png" alt="team-04" />
+              <img class="avatar" src="images/team-05.png" alt="team-05" />
+            </div>
+            <div class="tech-skills flex-end mt-20 pt-20 pb-20 bt-eee bb-eee">
+              <span class="btn-shap bg-eee fs-13 ml-10">Programming</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Design</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Hosting</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Marketing</span>
+            </div>
+            <div class="flex-between mt-20">
+              <div class="progress mt-10 bg-eee rad-6">
+                <span
+                  class="d-block h-full bg-green rad-6"
+                  style="width: 60%"
+                ></span>
+              </div>
+              <span class="price c-gray fs-14">$ 1950</span>
+            </div>
+          </div>
+          <!-- end project -->
+          <!-- start project-->
+          <div class="project p-relative rad-10 p-20 bg-white">
+            <h3 class="project-name fs-16">Mohamed Dashboard</h3>
+            <p class="level c-gray mt-10 fs-14">
+              Mohamed Dashboard Project Design And Programming And Hosting
+            </p>
+            <span class="time-stamp fs-13 c-gray">15/6/2022 </span>
+            <div class="project-team mt-50">
+              <img class="avatar" src="images/team-03.png" alt="team-03" />
+              <img class="avatar" src="images/team-04.png" alt="team-04" />
+              <img class="avatar" src="images/team-05.png" alt="team-05" />
+            </div>
+            <div class="tech-skills flex-end mt-20 pt-20 pb-20 bt-eee bb-eee">
+              <span class="btn-shap bg-eee fs-13 ml-10">Design</span>
+            </div>
+            <div class="flex-between mt-20">
+              <div class="progress mt-10 bg-eee rad-6">
+                <span
+                  class="d-block h-full bg-red rad-6"
+                  style="width: 35%"
+                ></span>
+              </div>
+              <span class="price c-gray fs-14">$ 950</span>
+            </div>
+          </div>
+          <!-- end project -->
+          <!-- start project-->
+          <div class="project p-relative rad-10 p-20 bg-white">
+            <h3 class="project-name fs-16">Mohamed Portal</h3>
+            <p class="level c-gray mt-10 fs-14">
+              Mohamed Portal Project Design And Programming
+            </p>
+            <span class="time-stamp fs-13 c-gray">15/6/2022 </span>
+            <div class="project-team mt-50">
+              <img class="avatar" src="images/team-03.png" alt="team-03" />
+              <img class="avatar" src="images/team-04.png" alt="team-04" />
+              <img class="avatar" src="images/team-05.png" alt="team-05" />
+            </div>
+            <div class="tech-skills flex-end mt-20 pt-20 pb-20 bt-eee bb-eee">
+              <span class="btn-shap bg-eee fs-13 ml-10">Programming</span>
+              <span class="btn-shap bg-eee fs-13 ml-10">Design</span>
+            </div>
+            <div class="flex-between mt-20">
+              <div class="progress mt-10 bg-eee rad-6">
+                <span
+                  class="d-block h-full bg-green rad-6"
+                  style="width: 52%"
+                ></span>
+              </div>
+              <span class="price c-gray fs-14">$ 1650</span>
+            </div>
+          </div>
+          <!-- end project -->
+          <!-- start project-->
+          <div class="project p-relative rad-10 p-20 bg-white">
+            <h3 class="project-name fs-16">Ahmed Application</h3>
+            <p class="level c-gray mt-10 fs-14">
+              Ahmed Application Project Design
+            </p>
+            <span class="time-stamp fs-13 c-gray">15/6/2022 </span>
+            <div class="project-team mt-50">
+              <img class="avatar" src="images/team-03.png" alt="team-03" />
+              <img class="avatar" src="images/team-04.png" alt="team-04" />
+              <img class="avatar" src="images/team-05.png" alt="team-05" />
+            </div>
+            <div class="tech-skills flex-end mt-20 pt-20 pb-20 bt-eee bb-eee">
+              <span class="btn-shap bg-eee fs-13 ml-10">Design</span>
+            </div>
+            <div class="flex-between mt-20">
+              <div class="progress mt-10 bg-eee rad-6">
+                <span
+                  class="d-block h-full bg-red rad-6"
+                  style="width: 35%"
+                ></span>
+              </div>
+              <span class="price c-gray fs-14">$ 950</span>
+            </div>
+          </div>
+          <!-- end project -->
+        </div>
+      </div>
+      <!-- End Page Content -->
+    </div>
+  </body>
+</html>

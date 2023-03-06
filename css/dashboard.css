@@ -236,13 +236,11 @@ body {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-
 .dashboard .welcome .header {
   justify-content: space-between;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
 .dashboard .box .info span {
   margin-top: 20px;
   color: var(--gray-color);
@@ -470,7 +468,7 @@ body {
 }
 /* End Uploads */
 /* Start Last Project Progress */
-.project .project-progress::before {
+.home .content .dashboard .project .project-progress::before {
   content: "";
   position: absolute;
   left: 10px;
@@ -479,7 +477,7 @@ body {
   height: 100%;
   background-color: var(--blue-color);
 }
-.project ul li::before {
+.home .content .dashboard .project ul li::before {
   content: "";
   display: block;
   margin-right: 20px;
@@ -495,14 +493,14 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.project ul .done::before {
+.home .content .dashboard .project ul .done::before {
   background-color: var(--blue-color);
 }
-.project ul li.current::before {
+.home .content .dashboard .project ul li.current::before {
   animation: change-bg 0.8s infinite alternate;
   -webkit-animation: change-bg 0.8s infinite alternate;
 }
-.project img {
+.home .content .dashboard .project img {
   position: absolute;
   width: 140px;
   right: 10px;
@@ -1081,6 +1079,82 @@ body {
 /* End Activities */
 
 /******************* End Profile Page */
+/*********************** Start Project Page */
+.content .header-decoration {
+  position: relative;
+  width: 150px;
+  height: 4px;
+  background-color: white;
+  margin: 10px 20px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.content .header-decoration span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;
+  background-color: black;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.content .container {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .content .container {
+    margin: 0;
+    padding: 15px;
+    grid-template-columns: minmax(250px, 1fr);
+  }
+  .content .project {
+    padding: 10px;
+  }
+}
+.content .project .time-stamp {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+.content .project .project-team img {
+  width: 40px;
+  height: 40px;
+}
+.content .project .project-team img:not(:first-child) {
+  margin-left: -15px;
+}
+@media (max-width: 767px) {
+  .content .project .tech-skills {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.content .project .progress {
+  width: 250px;
+  height: 6px;
+}
+@media (max-width: 767px) {
+  .content .project > div:last-child {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content .project .progress {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/*********************** End Project Page */
+
 /* Start Animation */
 @keyframes shake {
   0% {
