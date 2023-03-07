@@ -1256,9 +1256,20 @@ body {
 .files .holder {
   align-items: flex-start;
 }
+@media (max-width: 767px) {
+  .files .holder {
+    flex-direction: column-reverse;
+  }
+}
 .files .container {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
+}
+@media (max-width: 767px) {
+  .files .container {
+    width: 100%;
+    padding: 0;
+  }
 }
 .files .container .file > i {
   position: absolute;
@@ -1284,7 +1295,12 @@ body {
   -o-transform: rotate(5deg);
 }
 .files .holder .file-stats {
-  min-width: 300px;
+  min-width: 250px;
+}
+@media (max-width: 767px) {
+  .files .holder .file-stats {
+    width: 100%;
+  }
 }
 .files .holder .file-stats .card i {
   width: 40px;
