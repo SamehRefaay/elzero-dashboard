@@ -1252,6 +1252,25 @@ body {
   -o-transform: translateY(-50%);
 }
 /********************************* End Friends Page  */
+/************************************* Start Files Page  */
+.files .container {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.files .container .file > i {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.files .container .file img {
+  display: block;
+  margin: 16px auto;
+  width: 64px;
+  height: 64px;
+}
+.files .container .file .name {
+}
+/************************************* End Files Page  */
 
 /* Start Animation */
 @keyframes shake {

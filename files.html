@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elzero Dashboard</title>
+    <!-- add font-aswesome liberary -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- add normalize file -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- add framework stylesheet -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- add main file stylesheet -->
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <!-- add opensans google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="files page d-flex bg-master">
+      <div class="sidebar p-20 bg-white p-relative">
+        <h2 class="title fs-1p3 fw-bold p-relative m-auto p-20 bb-2">Elzero</h2>
+        <!-- left Menu -->
+        <ul class="main-menu d-flex flex-c gap-5 mt-30">
+          <li class="p-10 rad-6">
+            <a href="index.html" class="c-black">
+              <i class="fa-solid fa-table-columns mr-10"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="settings.html" class="c-black">
+              <i class="mr-10 fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="profile.html" class="c-black">
+              <i class="mr-10 fa-solid fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="projects.html" class="c-black">
+              <i class="mr-10 fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="courses.html" class="c-black">
+              <i class="mr-10 fa-solid fa-graduation-cap"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="friends.html" class="c-black">
+              <i class="mr-10 fa-solid fa-user-group"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li class="active mt-10 p-10 rad-6">
+            <a href="files.html" class="c-black">
+              <i class="mr-10 fa-solid fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li class="mt-10 p-10 rad-6">
+            <a href="#files" class="c-black">
+              <i class="mr-10 fa-solid fa-credit-card"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="fixed-header d-flex p-15 bg-white">
+          <div class="search-box p-relative">
+            <i class="p-absolute fs-14 fa-solid fa-magnifying-glass"></i>
+            <input
+              class="pl-30 pv-10 rad-10 fs-14"
+              type="text"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="user d-flex flex-between gap-20">
+            <i class="fa-regular fa-bell fa-lg fw-900"></i>
+            <div class="user-avatar">
+              <img src="images/avatar.png" alt="user-avatar" />
+            </div>
+          </div>
+        </div>
+        <!-- End Head -->
+        <!-- Start Page Content -->
+        <h2 class="page-header fs-32 mt-20 ml-20">Files</h2>
+        <div class="header-decoration">
+          <span style="width: 90%"></span>
+        </div>
+        <div class="container d-grid mt-20 p-15 gap-20">
+          <!-- start file 1-->
+          <div class="file p-relative rad-10 p-10 bg-white">
+            <i class="fa-solid fa-download c-gray fs-16"></i>
+            <img src="images/pdf.svg" alt="pdf" />
+            <span class="name d-block mt-20 fs-14 txt-c">my-file.pdf</span>
+            <span class="creator d-block mt-20 c-gray txt-l fs-13">Elzero</span>
+            <div class="flex-between mt-10 bt-eee pt-10">
+              <span class="modified-date c-gray fs-13">20/06/2020</span>
+              <span class="size c-gray fs-13">5.5MB </span>
+            </div>
+          </div>
+          <!-- end file 1-->
+        </div>
+        <div class="file-stats">File States</div>
+      </div>
+      <!-- End Page Content -->
+    </div>
+  </body>
+</html>
