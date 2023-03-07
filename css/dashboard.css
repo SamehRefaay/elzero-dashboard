@@ -1253,6 +1253,9 @@ body {
 }
 /********************************* End Friends Page  */
 /************************************* Start Files Page  */
+.files .holder {
+  align-items: flex-start;
+}
 .files .container {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
@@ -1279,6 +1282,31 @@ body {
   -moz-transform: rotate(5deg);
   -ms-transform: rotate(5deg);
   -o-transform: rotate(5deg);
+}
+.files .holder .file-stats {
+  min-width: 300px;
+}
+.files .holder .file-stats .card i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.files .holder .file-stats .upload-btn {
+  margin: 15px auto 0;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.files .holder .file-stats .upload-btn:hover {
+  background-color: var(--blue-alt-color);
+}
+.files .holder .file-stats .upload-btn:hover i {
+  animation: goesUpandDown 0.8s infinite;
+  -webkit-animation: goesUpandDown 0.8s infinite;
 }
 /************************************* End Files Page  */
 
@@ -1369,6 +1397,23 @@ body {
   }
   to {
     background-color: white;
+  }
+}
+@keyframes goesUpandDown {
+  0%,
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
   }
 }
 /* End Animation */
