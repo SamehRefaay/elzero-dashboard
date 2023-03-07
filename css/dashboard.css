@@ -1154,7 +1154,46 @@ body {
   }
 }
 /*********************** End Project Page */
-
+/**************************** Start Coruses Page  */
+.courses .container {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .courses .container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+.courses .course .course-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+.courses .course .avatar {
+  width: 64px;
+  height: 64px;
+  box-shadow: none;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.courses .course p {
+  line-height: 1.7;
+}
+.courses .course .course-info span.title {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/**************************** End Coruses Page  */
 /* Start Animation */
 @keyframes shake {
   0% {
