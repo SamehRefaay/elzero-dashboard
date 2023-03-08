@@ -1,7 +1,7 @@
 /*Start Gloabals*/
 :root {
   --main-transition: 0.3s;
-  --gray-colo: #888;
+  --gray-color: #888;
   --red-color: #f44336;
   --green-color: #22c55e;
   --orange-color: #f59e0b;
@@ -213,6 +213,9 @@ mb-40 {
 }
 .fs-32 {
   font-size: 32px;
+}
+.fs-40 {
+  font-size: 40px;
 }
 .fw-bold {
   font-weight: bold;

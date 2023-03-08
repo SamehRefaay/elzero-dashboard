@@ -1,7 +1,7 @@
 /*Start Global Variables*/
 :root {
   --main-transition: 0.3s;
-  --gray-colo: #888;
+  --gray-color: #888;
   --red-color: #f44336;
   --green-color: #22c55e;
   --orange-color: #f59e0b;
@@ -1325,7 +1325,60 @@ body {
   -webkit-animation: goesUpandDown 0.8s infinite;
 }
 /************************************* End Files Page  */
-
+/***************************************** Start Plans Page  */
+.plans .container {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+}
+.plans .container .plan .header {
+  border: 3px solid white;
+  outline: 3px solid var(--green-color);
+}
+.plans .container .plan .header span.price {
+  margin: 10px auto;
+}
+.plans .container .plan .header span:before {
+  position: absolute;
+  content: "$";
+  left: -20px;
+  top: -10px;
+  font-size: 25px;
+}
+.plans .container .plan .features li {
+  position: relative;
+  font-size: 15px;
+  padding: 20px 20px 20px;
+  border-bottom: 1px solid #eee;
+}
+.plans .container .plan .features li::before,
+.plans .container .plan .features li::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.plans .container .plan .features li::before {
+  content: "\f00d";
+  left: 0;
+  color: var(--red-color);
+}
+.plans .container .plan .features li.included::before {
+  content: "\f00c";
+  color: var(--green-color);
+}
+.plans .container .plan .features li::after {
+  content: "\f05a";
+  right: 0;
+  color: var(--gray-color);
+  cursor: pointer;
+}
+/***************************************** End Plans Page  */
 /* Start Animation */
 @keyframes shake {
   0% {
