@@ -1332,7 +1332,16 @@ body {
 }
 .plans .container .plan .header {
   border: 3px solid white;
-  outline: 3px solid var(--green-color);
+  outline: 3px solid;
+}
+.plans.plans .container .green .header {
+  outline-color: var(--green-color);
+}
+.plans.plans .container .blue .header {
+  outline-color: var(--blue-color);
+}
+.plans.plans .container .ornage .header {
+  outline-color: var(--orange-color);
 }
 .plans .container .plan .header span.price {
   margin: 10px auto;
@@ -1355,7 +1364,7 @@ body {
   position: absolute;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 16px;
+  font-size: 18px;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
